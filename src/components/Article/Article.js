@@ -6,13 +6,13 @@ class Article extends Component {
     return (
       <div className="article">
         <div className='article-img'>
-                <img className='article-img-logo' src={props.image} alt=''></img>
+                <img className='article-img-logo' src={`./media/${this.props.article.img}`} alt=''></img>
             </div>
         <div className="article-text" />
-          <h5>{props.title}</h5>
-          <p>{props.text}</p>
+          <h5>{this.props.article.title}</h5>
+          <p>{this.props.article.text}</p>
         <div className="article-link-button">
-            <a href="/link/to/page2">Continue</a>
+            <a href={this.props.article.url}>Continue</a>
         </div>
       </div>
     );
