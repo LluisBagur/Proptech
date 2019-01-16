@@ -1,10 +1,10 @@
 .article{
-
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 30%;
+  min-width: 300px;
   margin: 15px;
   margin-top: 40px;
   max-height: 400px;
@@ -18,14 +18,18 @@
     height: 50px;
     border-radius: 50px;
     background: #8ea8af2e;
+    margin-bottom: 20px;
 }
 
 .article-img-logo{
-    width: 30px;
-    height: 30px;
-    color: #6173d8;
+    width: 25px;
+    height: 25px;
+
 }
 
+.article-img-logo path{
+    fill:#6173d8;
+}
 .article-text{
     display: flex;
     align-items: flex-start;

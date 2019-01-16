@@ -6,14 +6,14 @@
     width: 85%;
     height: 150px;
     margin-top: 50px;
-    background: url("./banner-fondo.png");
+    background: url("./media/banner-fondo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .banner-logo{
-    background: url("./proptech2.png");
+    background: url("./media/proptech2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

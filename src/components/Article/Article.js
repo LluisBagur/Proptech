@@ -2,17 +2,20 @@ import React, { Component } from "react";
 import "./Article.css";
 
 class Article extends Component {
+
   render() {
+    const { img, title, text, link } = this.props.article
+    const logo = require(`./media/${img}`)
     return (
       <div className="article">
         <div className='article-img'>
-                <img className='article-img-logo' src={`./media/${this.props.article.img}`} alt=''></img>
+                <img className='article-img-logo' src={logo} alt=''></img>
             </div>
         <div className="article-text" />
-          <h5>{this.props.article.title}</h5>
-          <p>{this.props.article.text}</p>
+          <h5>{title}</h5>
+          <p>{text}</p>
         <div className="article-link-button">
-            <a href={this.props.article.url}>LEARN MORE -></a>
+            <a href={link}>LEARN MORE -></a>
         </div>
       </div>
     );
