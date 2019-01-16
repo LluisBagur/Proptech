@@ -1,6 +1,6 @@
 .App {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   background: #ffffff
@@ -11,12 +11,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.App-header-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:85%;
+  margin: 30px;
+}
+
+.App-body{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:85%;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+h1{
+  color: black;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: justify;
 }
 
 @keyframes App-logo-spin {

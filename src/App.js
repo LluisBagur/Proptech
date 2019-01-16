@@ -41,8 +41,10 @@ state={
       <div className="App">
         <header className="App-header">
         <Banner/>
+
+        <div className="App-header-title"><h1> How open banking technology can help your business</h1></div>
         </header>
-        <div className="body">
+        <div className="App-body">
 
         <Article article={this.state.article1}/>
         <Article article={this.state.article2}/>

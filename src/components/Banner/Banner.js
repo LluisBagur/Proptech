@@ -9,7 +9,7 @@ class Banner extends Component {
         <div className="banner-logo" />
         <div className="banner-text">
           <h3>What is Proptech?</h3>
-          <p>Download our infoghraphic and find out.</p>
+          <h6>Download our infoghraphic and find out.</h6>
         </div>
         <div className="banner-download-button">
           <Downloadbutton />

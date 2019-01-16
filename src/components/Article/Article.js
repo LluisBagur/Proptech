@@ -12,7 +12,7 @@ class Article extends Component {
           <h5>{this.props.article.title}</h5>
           <p>{this.props.article.text}</p>
         <div className="article-link-button">
-            <a href={this.props.article.url}>Continue</a>
+            <a href={this.props.article.url}>LEARN MORE -></a>
         </div>
       </div>
     );
