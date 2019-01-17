@@ -60,3 +60,33 @@ a{
     color: #6173d8;
     font-weight: bold;
 }
+
+
+@media (min-width: 800px) and (max-width: 1100px) {
+
+    .article{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        min-width: 300px;
+        margin: 15px;
+        margin-top: 40px;
+        max-height: 500px;
+      }
+  }
+
+  @media (min-width: 550px) and (max-width: 800px) {
+    .article{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        min-width: 200px;
+        margin: 15px;
+        margin-top: 40px;
+        max-height: 500px;
+      }
+  }      

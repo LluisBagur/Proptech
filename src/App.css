@@ -29,3 +29,14 @@
   color: #61dafb;
 }
 
+@media (min-width: 200px) and (max-width: 1162px) {
+
+  .App-body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:85%;
+  }
+}
