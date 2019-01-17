@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Banner from './components/Banner/Banner';
-import Article from './components/Article/Article';
+import {Banner} from './components/Banner/Banner';
+import {Article} from './components/Article/Article';
+import {HeaderTitle} from './components/HeaderTitle/HeaderTitle'
 import './App.css';
 
 class App extends Component {
@@ -34,15 +35,16 @@ state={
     title:"Automation opportunities",
     text:"Fully automate money movement precedures, identuty checks, and account readings, reducing the need for human input.",
     link:"www.google.es"
-  }
+  },
+  header:"How open banking technology can help your business",
+  url: "www.google.es"
 }
   render() {
     return (
       <div className="App">
         <header className="App-header">
-        <Banner/>
-
-        <div className="App-header-title"><h1> How open banking technology can help your business</h1></div>
+        <Banner url={this.state.url}/>
+        <HeaderTitle header={this.state.header} />
         </header>
         <div className="App-body">
 

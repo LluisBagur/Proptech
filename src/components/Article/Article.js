@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Article.css";
 
-class Article extends Component {
+export function Article(props) {
 
-  render() {
-    const { img, title, text, link } = this.props.article
+    const { img, title, text, link } = props.article
     const logo = require(`./media/${img}`)
     return (
       <div className="article">
@@ -15,11 +14,10 @@ class Article extends Component {
           <h5>{title}</h5>
           <p>{text}</p>
         <div className="article-link-button">
-            <a href={link}>LEARN MORE -></a>
+            <a className="link" href={link}>LEARN MORE -></a>
         </div>
       </div>
-    );
+    )
   }
-}
 
-export default Article;
+

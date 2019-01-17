@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./Banner.css";
-import Downloadbutton from "../Downloadbutton/Downloadbutton";
+import {Downloadbutton} from "../Downloadbutton/Downloadbutton";
 
-class Banner extends Component {
-  render() {
+
+  export function Banner(props) {
+ 
     return (
       <div className="banner">
         <div className="banner-logo" />
@@ -12,11 +13,8 @@ class Banner extends Component {
           <h6>Download our infoghraphic and find out.</h6>
         </div>
         <div className="banner-download-button">
-          <Downloadbutton />
+          <Downloadbutton url={props.url} />
         </div>
       </div>
     );
   }
-}
-
-export default Banner;

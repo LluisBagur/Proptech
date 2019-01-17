@@ -2,17 +2,11 @@ import React, { Component } from 'react';
 import './Downloadbutton.css';
 
 
-class Banner extends Component {
-  render() {
+export function Downloadbutton(props) {
     return (
       <div className="Downloadbutton">
-        <div className="Downloadbutton-background">
-           
-
-        </div>       
+        <button  className="download-button"><a className="text" href={props.url}>DOWNLOAD NOW -></a>  </button>      
       </div>
     );
   }
-}
 
-export default Banner;
